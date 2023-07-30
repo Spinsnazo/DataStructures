@@ -5,7 +5,7 @@
 
 #define MAX_PRIORITY 1000
 
-
+// A struct to store a queue node
 struct QueueNode{
     int data;
     int priority;
@@ -13,8 +13,8 @@ struct QueueNode{
     QueueNode* previous;
 };
 
-/*
-    A class to store a priority queue using a doubly linked list.
+/**
+ * A class to store a priority queue using a doubly linked list.
 */
 
 class PriorityQueuePtr

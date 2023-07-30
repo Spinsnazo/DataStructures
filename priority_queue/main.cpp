@@ -64,16 +64,16 @@ int main()
     std::cout<<kol.toString()<<"\n";
 #endif
 #ifndef TEST
-    PriorityQueueArr tab(NUMBER);
+    PriorityQueueArr arr(NUMBER);
     srand(SEED);
     auto start = std::chrono::high_resolution_clock::now();
     int add_number = rand()%(NUMBER/2)+(NUMBER/2);
     for(int i=0; i<add_number; i++){ // 0 - 24999 + 25000
-        tab.add(rand()%NUMBER, rand()%MAX_PRIORITY);
+        arr.add(rand()%NUMBER, rand()%MAX_PRIORITY);
     }
     int del_num = rand()%(NUMBER/2)+(NUMBER/2);
     for(int i=0; i<del_num; i++){ // 0 - 24999 + 25000
-        tab.pop();
+        arr.pop();
     }
     auto end = std::chrono::high_resolution_clock::now();
     std::cout<<"Number of additions: "<<add_number<<", Number of deletions: "<<del_num<<"\n";
