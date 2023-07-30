@@ -3,7 +3,9 @@
 
 #include <string>
 
-// A class used to store an edge with weight.
+/**
+ *  A class used to store an edge with weight.
+*/
 class WEdge
 {
     public:

@@ -5,16 +5,16 @@
 
 #define MAX_PRIORITY 1000
 
-
+// A struct to store a queue element
 struct QueueElement{
     int data;
     int priority;
 };
 
-/*
-    A class to store a priority queue in a regular array.
-    A circular buffer is used to follow up the changes that are done to
-    the data structure.
+/**
+ * A class to store a priority queue in a regular array.
+ * A circular buffer is used to follow up the changes that are done to
+ * the data structure.
 */
 
 class PriorityQueueArr
@@ -23,15 +23,18 @@ class PriorityQueueArr
         PriorityQueueArr();
         PriorityQueueArr(int siz);
         ~PriorityQueueArr();
-        void add(int element, int pr); // With priority
-        void add(int element);         // Priority = MAX_PRIORITY
-        int peek();                    // Returns the first element in the queue
+        // With priority
+        void add(int element, int pr);
+        // Priority = MAX_PRIORITY
+        void add(int element);
+        // Returns the first element in the queue without removing it
+        int peek();
         int pop();
         bool isEmpty();
         std::string toString();
         void printTab();
     private:
-        QueueElement *tab;
+        QueueElement *arr;
         int size;
         int start;
         int end;

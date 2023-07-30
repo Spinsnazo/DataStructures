@@ -1,7 +1,9 @@
 #ifndef HEAPNODE_H
 #define HEAPNODE_H
 
-
+/**
+  A struct to store a heap node data.
+*/
 struct HeapNode
 {
     HeapNode *parent;
