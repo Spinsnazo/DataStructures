@@ -1,6 +1,5 @@
 #include "HeapPtr.h"
 
-
 HeapPtr::HeapPtr()
 {
     root = NULL;

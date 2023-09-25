@@ -1,6 +1,5 @@
 #include "PriorityQueueArr.h"
 
-
 PriorityQueueArr::PriorityQueueArr()
 {
     size = 10;

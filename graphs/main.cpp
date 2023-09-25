@@ -4,7 +4,6 @@
 #include <chrono>
 #include <iomanip>
 
-
 // Number of nodes and edges for comparison tests between the adjacency matrix and adjacency list
 #define NODES 10000
 #define EDGES 40000

@@ -1,6 +1,5 @@
 #include "PriorityQueuePtr.h"
 
-
 PriorityQueuePtr::PriorityQueuePtr()
 {
     sentinel = new QueueNode;

@@ -13,7 +13,6 @@
 #define POINTERS
 //#define OTHER_TESTS
 
-
 int main()
 {
 #ifdef OTHER_TESTS

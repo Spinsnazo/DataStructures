@@ -1,6 +1,5 @@
 #include "HeapArr.h"
 
-
 HeapArr::HeapArr()
 {
     size = 10;
